@@ -1,9 +1,22 @@
-<header class="container-fluid">
-    <nav data-bind="class: bgColor" class="navbar navbar-expand-sm">
-        <figure>
-            <a class="navbar-brand m-3" href="#">
-                <img data-bind="attr: { src=logo }"></img>
+<header data-bind="class: headerHeight" class="d-flex flex-column container-fluid p-0 m-o">
+    <nav data-bind="class: navBgColor" class="navbar navbar-light navbar-expand-sm sticky-top">
+        <figure class="m-0">
+            <a href="#">
+                <img class="ktfLogo ml-2 my-3" data-bind="attr: { src: logo }"></img>
             </a>
         </figure>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
+            <span class="navbar-toggler-icon text-dark"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center justify-content-end" id="mainNavbar">
+            <ul class="navbar-nav text-dark m-2">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            </ul>
+        </div>
     </nav>
+    <div data-bind="visible: jumbotronDisplay, class: jumBgColor" class="d-flex flex-column jumbotron-fluid flex-fill justify-content-center align-items-center">
+        <h1 data-bind="text: jumText" class="display-4"></h1>
+        <p data-bind="text: jumDescription" class="lead"></p>
+    </div>
 </header>

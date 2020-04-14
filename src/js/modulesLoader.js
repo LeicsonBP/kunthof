@@ -1,6 +1,6 @@
 requirejs.config({
 
-    baseUrl: '../src/js',
+    baseUrl: './js',
 
     paths: {
         'registerComponents': 'components/componentsRegister',
@@ -9,11 +9,15 @@ requirejs.config({
         'knockout': 'plugins/knockout.min',
         'layouts': 'components/layouts',
         'widgets': 'components/widgets',
-        'templates': '../components'
+        'templates': '../components',
+        'text': 'plugins/text'
     },
 
     shim:{
         'bootstrap': {
+            deps: ['jquery']
+        },
+        'knockout': {
             deps: ['jquery']
         }
     }
