@@ -3,13 +3,19 @@ define(['text!templates/layouts/ktfHeader.ly.html'],function(html){
     return {
         
         viewModel: function(params){       
-            this.navBgColor = params.navBgColor;
-            this.jumBgColor = params.jumBgColor;
-            this.logo = params.logo;
-            this.jumText = params.jumText;
-            this.jumDescription = params.jumDescription;
-            this.jumbotronDisplay = params.jumbotronDisplay;
-            this.headerHeight = this.jumbotronDisplay ? "vh-100" : "";
+
+            let self = this;
+
+            self.navBgColor = params.navBgColor;
+            self.jumBgColor = params.jumBgColor;
+            self.logo = params.logo;
+            self.jumText = params.jumText;
+            self.jumDescription = params.jumDescription;
+            self.jumbotronDisplay = params.jumbotronDisplay;
+            self.headerHeight = self.jumbotronDisplay ? "vh-100" : "";
+            self.seed = params.seed ? params.seed: 3;
+            self.imageBackground = `url(https://picsum.photos/seed/${self.seed}/4000/3000/)`;
+        
         },
         template: html
 

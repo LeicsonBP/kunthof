@@ -10,13 +10,14 @@
         </button>
         <div class="collapse navbar-collapse text-center justify-content-end" id="mainNavbar">
             <ul class="navbar-nav text-dark m-2">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item active"><a href="#" class="nav-link">About</a></li>
             </ul>
         </div>
     </nav>
-    <div data-bind="visible: jumbotronDisplay, class: jumBgColor" class="d-flex flex-column jumbotron-fluid flex-fill justify-content-center align-items-center">
-        <h1 data-bind="text: jumText" class="display-4"></h1>
-        <p data-bind="text: jumDescription" class="lead"></p>
+    <div data-bind="visible: jumbotronDisplay, class: jumBgColor, style: { 'background-image': imageBackground}" class="d-flex flex-column jumbotron-fluid flex-fill justify-content-center align-items-center gotBgi bg-blendMultiply text-light">
+        <span class='bg'></span>
+        <h1 data-bind="text: jumText" class="display-6 display-text"></h1>
+        <p data-bind="text: jumDescription" class="lead lead-text text-2"></p>
     </div>
 </header>
