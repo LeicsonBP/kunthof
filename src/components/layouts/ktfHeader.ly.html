@@ -15,9 +15,5 @@
             </ul>
         </div>
     </nav>
-    <div data-bind="visible: jumbotronDisplay, class: jumBgColor, style: { 'background-image': imageBackground}" class="d-flex flex-column jumbotron-fluid flex-fill justify-content-center align-items-center gotBgi bg-blendMultiply text-light">
-        <span class='bg'></span>
-        <h1 data-bind="text: jumText" class="display-6 display-text"></h1>
-        <p data-bind="text: jumDescription" class="lead lead-text text-2"></p>
-    </div>
+    <!-- ko template: { nodes: $componentTemplateNodes } --><!-- /ko -->
 </header>

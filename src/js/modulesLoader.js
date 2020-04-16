@@ -10,7 +10,8 @@ requirejs.config({
         'layouts': 'components/layouts',
         'widgets': 'components/widgets',
         'templates': '../components',
-        'text': 'plugins/text'
+        'text': 'plugins/text',
+        'postbox': 'plugins/postbox'
     },
 
     shim:{

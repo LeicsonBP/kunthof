@@ -16,23 +16,47 @@
 </head>
 <body>
 
-    <ktf-header 
+    <ktf-header
         params=
-        " 
+        "
             {
                 navBgColor: 'bg-white',
-                jumBgColor: 'bg-ktfRedDark',
-                jumText: 'Hello, World!',
-                jumDescription: 'An example of customizable site', 
                 logo: 'img/Red Logo/Kunthof-Red-TB-Default.svg',
-                jumbotronDisplay: true,
-                seed: 4,
-            } 
+                jumbotronDisplay: true
+            }
         "
     >
+        <!-- ko component: 
+            {
+                name: "ktf-jumbotron",
+                params: 
+                {
+                    jumBgColor: 'bg-ktfRedDark',
+                    jumText: 'Hello, World!',
+                    jumDescription: 'An example of customizable site',
+                    jumbotronDisplay: true,
+                    seed: 3
+                }             
+            }
+        -->
+        <!-- /ko --> 
     </ktf-header>
 
+    <main>
+        <!-- <ktf-jumbotron>
 
+        </ktf-jumbotron> -->
+        <ktf-form>
+
+        </ktf-form>
+        <ktf-cards>
+
+        </ktf-cards>
+    </main>
+
+    <ktf-footer>
+
+    </ktf-footer>
 
 </body>
 </html>
