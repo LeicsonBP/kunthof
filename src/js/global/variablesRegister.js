@@ -1,0 +1,9 @@
+const KTF_LOGO_B_TB = "img/Black Logo/Kunthof-Black-TB-Default.svg";
+const KTF_LOGO_B_TR = "img/Black Logo/Kunthof-Black-TR-Default.svg";
+const KTF_LOGO_B_TW = "img/Black Logo/Kunthof-Black-TW-Default.svg";
+const KTF_LOGO_R_TB = "img/Red Logo/Kunthof-Red-TB-Default.svg";
+const KTF_LOGO_R_TR = "img/Red Logo/Kunthof-Red-TR-Default.svg";
+const KTF_LOGO_R_TW = "img/Red Logo/Kunthof-Red-TW-Default.svg";
+const KTF_LOGO_W_TB = "img/White Logo/Kunthof-White-TB-Default.svg";
+const KTF_LOGO_W_TR = "img/White Logo/Kunthof-White-TR-Default.svg";
+const KTF_LOGO_W_TW = "img/White Logo/Kunthof-White-TW-Default.svg";

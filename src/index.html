@@ -10,53 +10,14 @@
     <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2|Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-     <!-- Require -->
-     <script data-main="./js/modulesLoader.js" src="./js/plugins/requirejs.min.js"></script>
+    <!-- Require -->
+    <script data-main="./js/utils/modulesLoader.js" src="./js/plugins/requirejs.min.js"></script>
+
 
 </head>
 <body>
 
-    <ktf-header
-        params=
-        "
-            {
-                navBgColor: 'bg-white',
-                logo: 'img/Red Logo/Kunthof-Red-TB-Default.svg',
-                jumbotronDisplay: true
-            }
-        "
-    >
-        <!-- ko component: 
-            {
-                name: "ktf-jumbotron",
-                params: 
-                {
-                    jumBgColor: 'bg-ktfRedDark',
-                    jumText: 'Hello, World!',
-                    jumDescription: 'An example of customizable site',
-                    jumbotronDisplay: true,
-                    seed: 3
-                }             
-            }
-        -->
-        <!-- /ko --> 
-    </ktf-header>
-
-    <main>
-        <!-- <ktf-jumbotron>
-
-        </ktf-jumbotron> -->
-        <ktf-form>
-
-        </ktf-form>
-        <ktf-cards>
-
-        </ktf-cards>
-    </main>
-
-    <ktf-footer>
-
-    </ktf-footer>
+    <div id="app"></div>
 
 </body>
 </html>

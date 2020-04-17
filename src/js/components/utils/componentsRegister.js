@@ -1,5 +1,5 @@
-define(['jquery','knockout','text','bootstrap','postbox'],function($,ko){
-    
+define(['knockout'],function(ko){
+
     ko.components.register('ktf-header',{
 
         require: 'components/layouts/ktfHeader.ly'
