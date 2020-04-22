@@ -1,4 +1,4 @@
-define(['text!templates/layouts/ktfHeader.ly.html'],function(html){   
+define(['text!templates/layouts/ktfHeader.ly.html','postbox','knockout'],function(html,POSTBOX,ko){   
 
     return {
         
@@ -6,12 +6,23 @@ define(['text!templates/layouts/ktfHeader.ly.html'],function(html){
 
             let self = this;
 
-            self.navBgColor = params.navBgColor;
+            self.navBgColor = ko.observable(params.navBgColor);
             self.navText = params.navText;
-            self.navProps = `${self.navBgColor} ${self.navText}`;
+            self.navProps = ko.computed(function() {
+                return `${self.navBgColor()} ${self.navText}`;
+            },self);
             self.logo = params.logo;
             self.jumbotronDisplay = params.jumbotronDisplay;
             self.headerHeight = self.jumbotronDisplay ? "vh-100" : "";
+
+            // POSTBOX.subscribe(colorClass => { 
+
+            //     self.navBgColor(colorClass); 
+                
+            //     console.log(self.navProps);
+                
+    
+            // },self,'primaryColor');
         
         },
         template: html

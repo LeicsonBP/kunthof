@@ -9,6 +9,7 @@
         }
     "
 >
+
     <!-- ko component: 
         {
             name: "ktf-jumbotron",
@@ -26,19 +27,54 @@
         
 </ktf-header>
 
-<ktf-main>
-    <ktf-colorSelector>
+<ktf-main
+    params=
+    "
+    {
 
-    </ktf-colorSelector>
-    <!-- <ktf-jumbotron>
-
-    </ktf-jumbotron> -->
-    <ktf-form>
+    }    
+    "
+>
+    <!-- ko component:
+        {
+            name: "ktf-color-selector",
+            params:
+            {
+                title: "Color Selector",
+                subtitle: "Select the primary color for the page",
+                colors:
+                [
+                    {
+                        name: 'Dark Red',
+                        textColor: 'text-light',
+                        color: 'bg-ktfRedDark'
+                    },
+                    {
+                        name: 'Dark Blue',
+                        textColor: 'text-light',
+                        color: 'bg-ktfBlueDark'
+                    },
+                    {
+                        name: 'Blue',
+                        textColor: 'text-light',
+                        color: 'bg-ktfBlue'
+                    },
+                    {
+                        name: 'Yellow',
+                        textColor: 'text-dark',
+                        color: 'bg-ktfYellow'
+                    }
+                ]
+            }
+        }
+    -->
+    <!-- /ko -->
+    <!-- <ktf-form>
 
     </ktf-form>
     <ktf-cards>
 
-    </ktf-cards>
+    </ktf-cards> -->
 </ktf-main>
 
 <ktf-footer>
