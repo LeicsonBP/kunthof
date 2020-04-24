@@ -14,15 +14,6 @@ define(['text!templates/layouts/ktfHeader.ly.html','postbox','knockout'],functio
             self.logo = params.logo;
             self.jumbotronDisplay = params.jumbotronDisplay;
             self.headerHeight = self.jumbotronDisplay ? "vh-100" : "";
-
-            // POSTBOX.subscribe(colorClass => { 
-
-            //     self.navBgColor(colorClass); 
-                
-            //     console.log(self.navProps);
-                
-    
-            // },self,'primaryColor');
         
         },
         template: html

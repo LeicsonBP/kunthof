@@ -1,5 +1,6 @@
-<div id="ktfJumbotron" data-bind="visible: jumbotronDisplay, class: jumBgColor, style: { 'background-image': imageBackground}" class="d-flex flex-column jumbotron-fluid flex-fill justify-content-center align-items-center gotBgi bg-blendMultiply text-light">
-    <span class='bg'></span>
-    <h1 data-bind="text: jumText" class="ktf-display-2 display-text"></h1>
-    <p data-bind="text: jumDescription" class="lead lead-text text-1"></p>
+<div id="ktfJumbotron" data-bind="visible: jumbotronDisplay, class: jumBgColor, style: { 'background-image': imageBackground }" class="d-flex flex-column jumbotron-fluid flex-fill justify-content-center align-items-center bg-props bg-blendMultiply bg-filterBlur text-light">
+    <div id="ktfJumbotronBox" class="bg-filterBlurDark rounded p-5 text-center">
+        <h1 data-bind="text: jumText" class="ktf-display-2 display-text"></h1>
+        <p data-bind="text: jumDescription" class="lead lead-text text-1 mb-0"></p>
+    </div>
 </div>

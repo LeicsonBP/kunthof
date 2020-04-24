@@ -24,6 +24,12 @@ define(['knockout','bootstrap'],function(ko){
 
     });
 
+    ko.components.register('ktf-form',{
+
+        require: 'components/layouts/ktfForm.ly'
+
+    });
+
     ko.applyBindings();
 
 });
