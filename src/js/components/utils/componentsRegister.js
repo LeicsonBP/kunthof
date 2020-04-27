@@ -30,6 +30,12 @@ define(['knockout','bootstrap'],function(ko){
 
     });
 
+    ko.components.register('ktf-cards',{
+
+        require: 'components/layouts/ktfCards.ly'
+
+    });
+
     ko.applyBindings();
 
 });

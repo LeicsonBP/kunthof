@@ -16,10 +16,7 @@
             params: 
             {
                 jumBgColor: 'bg-ktfRedDark',
-                jumText: 'Hello, World!',
-                jumDescription: 'An example of customizable site',
                 jumbotronDisplay: true,
-                seed: 9
             }             
         }
     -->
@@ -70,17 +67,91 @@
             name: "ktf-form",
             params:
             {
-                
+                frmTitle: "Hello, World!",
+                frmSubtitle: "An example of customizable site",
+                frmImages:
+                [
+                    {
+                        value: 1 
+                    },
+                    {
+                        value: 2
+                    },
+                    {
+                        value: 3
+                    },
+                    {
+                        value: 4
+                    },
+                    {
+                        value: 5
+                    },
+                    {
+                        value: 6
+                    },
+                    {
+                        value: 7
+                    },
+                    {
+                        value: 8
+                    },
+                    {
+                        value: 9
+                    },
+                ]
             }
         }
     -->
     <!-- /ko -->
 
-    <!-- 
-    <ktf-cards>
-
-    </ktf-cards> 
+    <!-- ko component:
+        {
+            name: "ktf-cards",
+            params:
+            {
+                cardElement:
+                [
+                    {
+                        cardTitle: "Hypermedia Audio",
+                        cardDescription: "A project developed to present a hypermedia audio job",
+                        cardLink: "/projects/audiohipermidia",
+                    },
+                    {
+                        cardTitle: "InfoQuiz",
+                        cardDescription: "A jQuery test project with a quiz about IT",
+                        cardLink: "/projects/infoquiz",
+                    },
+                    {
+                        cardTitle: "FinG",
+                        cardDescription: "An in-development project of a Financial Management System",
+                        cardLink: "/projects/fing",
+                    },
+                    {
+                        cardTitle: "Javascript",
+                        cardDescription: "A site explaining how the ES6 Javascript Classes works",
+                        cardLink: "/projects/javascript",
+                    },
+                    {
+                        cardTitle: "Compasso",
+                        cardDescription: "A test project made for been admitted  on the Compasso UOL",
+                        cardLink: "/projects/compasso",
+                    },
+                    {
+                        cardTitle: "RegPonto",
+                        cardDescription: "An in-development project for control the work hours",
+                        cardLink: "/projects/regponto",
+                    },
+                    {
+                        cardTitle: "Covid",
+                        cardDescription: "A chart/table with updated numbers of the Covid-19 pandemic",
+                        cardLink: "/projects/covid",
+                    }
+                ]
+            }
+        }
     -->
+    <!-- /ko -->
+
 </ktf-main>
 
 <ktf-footer>

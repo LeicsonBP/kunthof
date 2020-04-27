@@ -1,0 +1,13 @@
+<div class="d-flex align-content-center justify-content-center p-5 bg-light text-dark">
+    <div data-bind="foreach: cardElement" class="row container">
+        <div class="col-lg-4 mb-4">
+            <div class="card bg-light border-dark text-center">
+                <div class="card-body">
+                    <h5 data-bind="text: cardTitle" class="card-title"></h5>
+                    <p data-bind="text: cardDescription" class="card-text"></p>
+                    <a data-bind="attr: { href: cardLink }" class="btn btn-dark">Access</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

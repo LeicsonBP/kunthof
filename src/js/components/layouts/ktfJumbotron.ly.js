@@ -13,14 +13,14 @@ define(['text!templates/layouts/ktfJumbotron.ly.html','postbox','knockout','jque
             let self = this;
 
             self.jumBgColor = ko.observable(params.jumBgColor);
-            self.jumText = ko.observable(params.jumText);
-            self.jumDescription = ko.observable(params.jumDescription);
+            self.jumText = ko.observable("Hello,World!");
+            self.jumDescription = ko.observable("An example of customizable site");
             self.jumbotronDisplay = params.jumbotronDisplay;
-            self.seed = params.seed ? params.seed: 3;
+            self.seed = ko.observable();
             self.windowWidth = ko.observable($window.width());
             self.windowHeight = ko.observable($window.height());           
-            self.imageBackground = ko.computed(() => {
-                return `url(https://picsum.photos/seed/${self.seed}/${self.windowWidth()}/${self.windowHeight()}/)`;
+            self.imageBackground = ko.computed(() => {                 
+                return `url(https://picsum.photos/seed/${self.seed()}/${self.windowWidth()}/${self.windowHeight()}/)`;
             });
         
             POSTBOX.subscribe(colorClass => { 
@@ -40,6 +40,12 @@ define(['text!templates/layouts/ktfJumbotron.ly.html','postbox','knockout','jque
                 self.jumDescription(val);                
     
             },self,'mainSubtitle');
+
+            POSTBOX.subscribe(val => { 
+
+                self.seed(val);                
+    
+            },self,'mainImage');
 
         },
         template: html
